@@ -1,14 +1,114 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ps" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Business Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Business Guide</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#17243a;line-height:1.8}
+header{background:#102a43;color:white;padding:25px 15px;text-align:center}
+header h1{margin:0;font-size:30px}
+nav{background:#164e63;padding:12px;text-align:center}
+nav a{color:white;text-decoration:none;margin:8px;display:inline-block}
+.lang{text-align:center;padding:15px}
+button{border:0;border-radius:8px;padding:10px 16px;margin:5px;cursor:pointer;background:#0d9488;color:white;font-size:15px}
+.container{max-width:1000px;margin:auto;padding:20px}
+.hero{background:#dff7f2;padding:35px 20px;text-align:center;border-radius:15px}
+.hero h2{font-size:28px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px #0001}
+.card h3{color:#087f73}
+section{margin:30px 0}
+footer{background:#102a43;color:white;text-align:center;padding:20px}
+</style>
 </head>
 <body>
-  <h1>Welcome to Online Business Guide</h1>
-  <p>Learn how to start and grow your online business.</p>
-  <h2>زموږ ویب‌سایټ ته ښه راغلاست</h2>
-  <p>دلته د آنلاین کاروبار په اړه زده کړه وکړئ.</p>
+
+<header>
+<h1>Online Business Guide</h1>
+<p>Learn • Build • Grow</p>
+</header>
+
+<nav>
+<a href="#home" data-ps="کور" data-fa="خانه" data-en="Home">کور</a>
+<a href="#courses" data-ps="زده کړه" data-fa="آموزش" data-en="Courses">زده کړه</a>
+<a href="#about" data-ps="زموږ په اړه" data-fa="درباره ما" data-en="About">زموږ په اړه</a>
+</nav>
+
+<div class="lang">
+<button onclick="setLang('ps')">پښتو</button>
+<button onclick="setLang('fa')">دري</button>
+<button onclick="setLang('en')">English</button>
+</div>
+
+<main class="container">
+
+<section class="hero" id="home">
+<h2 data-ps="زموږ ویب‌سایټ ته ښه راغلاست" data-fa="به وب‌سایت ما خوش آمدید" data-en="Welcome to Our Website">زموږ ویب‌سایټ ته ښه راغلاست</h2>
+<p data-ps="له صفر څخه آنلاین کاروبار زده کړئ او خپل راتلونکی جوړ کړئ." data-fa="کسب‌وکار آنلاین را از صفر بیاموزید و آینده خود را بسازید." data-en="Learn online business from zero and build your future.">له صفر څخه آنلاین کاروبار زده کړئ او خپل راتلونکی جوړ کړئ.</p>
+<button onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})" data-ps="زده کړه پیل کړئ" data-fa="آموزش را شروع کنید" data-en="Start Learning">زده کړه پیل کړئ</button>
+</section>
+
+<section id="courses">
+<h2 data-ps="د آنلاین کاروبار زده کړې" data-fa="آموزش کسب‌وکار آنلاین" data-en="Online Business Courses">د آنلاین کاروبار زده کړې</h2>
+<div class="cards">
+
+<div class="card">
+<h3 data-ps="۱. آنلاین کاروبار" data-fa="۱. کسب‌وکار آنلاین" data-en="1. Online Business">۱. آنلاین کاروبار</h3>
+<p data-ps="د آنلاین کاروبار پېژندنه، د نظر انتخاب او د پیل لارې زده کړئ." data-fa="با کسب‌وکار آنلاین، انتخاب ایده و روش شروع آشنا شوید." data-en="Learn online business basics, choosing an idea and getting started.">د آنلاین کاروبار پېژندنه، د نظر انتخاب او د پیل لارې زده کړئ.</p>
+</div>
+
+<div class="card">
+<h3 data-ps="۲. فریلانسینګ" data-fa="۲. فریلنسری" data-en="2. Freelancing">۲. فریلانسینګ</h3>
+<p data-ps="د انلاین مهارتونو له لارې د کار موندلو لارې زده کړئ." data-fa="روش‌های یافتن کار از طریق مهارت‌های آنلاین را بیاموزید." data-en="Learn how to find work using digital skills.">د انلاین مهارتونو له لارې د کار موندلو لارې زده کړئ.</p>
+</div>
+
+<div class="card">
+<h3 data-ps="۳. ډیجیټل مارکېټینګ" data-fa="۳. بازاریابی دیجیتال" data-en="3. Digital Marketing">۳. ډیجیټل مارکېټینګ</h3>
+<p data-ps="د ټولنیزو رسنیو، اعلانونو او بازارموندنې بنسټونه زده کړئ." data-fa="اصول شبکه‌های اجتماعی، تبلیغات و بازاریابی را بیاموزید." data-en="Learn social media, advertising and marketing basics.">د ټولنیزو رسنیو، اعلانونو او بازارموندنې بنسټونه زده کړئ.</p>
+</div>
+
+<div class="card">
+<h3 data-ps="۴. آنلاین خرڅلاو" data-fa="۴. فروش آنلاین" data-en="4. Online Selling">۴. آنلاین خرڅلاو</h3>
+<p data-ps="څنګه خپل محصولات په انټرنېټ کې خرڅ کړئ." data-fa="چگونه محصولات خود را در اینترنت بفروشید." data-en="Learn how to sell products online.">څنګه خپل محصولات په انټرنېټ کې خرڅ کړئ.</p>
+</div>
+
+<div class="card">
+<h3 data-ps="۵. د پیسو مدیریت" data-fa="۵. مدیریت پول" data-en="5. Money Management">۵. د پیسو مدیریت</h3>
+<p data-ps="د لګښت، سپما او ګټې مدیریت زده کړئ." data-fa="مدیریت هزینه، پس‌انداز و سود را بیاموزید." data-en="Learn to manage expenses, savings and profit.">د لګښت، سپما او ګټې مدیریت زده کړئ.</p>
+</div>
+
+<div class="card">
+<h3 data-ps="۶. د کاروبار پلان" data-fa="۶. برنامه کسب‌وکار" data-en="6. Business Plan">۶. د کاروبار پلان</h3>
+<p data-ps="د خپل کاروبار لپاره ساده او عملي پلان جوړ کړئ." data-fa="برای کسب‌وکار خود یک برنامه ساده و عملی بسازید." data-en="Create a simple, practical plan for your business.">د خپل کاروبار لپاره ساده او عملي پلان جوړ کړئ.</p>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="card">
+<h2 data-ps="زموږ په اړه" data-fa="درباره ما" data-en="About Us">زموږ په اړه</h2>
+<p data-ps="Online Business Guide د هغو کسانو لپاره جوړ شوی چې غواړي آنلاین مهارتونه زده کړي او خپل کاروبار پیل کړي." data-fa="Online Business Guide برای کسانی ساخته شده که می‌خواهند مهارت‌های آنلاین بیاموزند و کسب‌وکار خود را آغاز کنند." data-en="Online Business Guide helps people learn digital skills and start their own businesses.">Online Business Guide د هغو کسانو لپاره جوړ شوی چې غواړي آنلاین مهارتونه زده کړي او خپل کاروبار پیل کړي.</p>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Online Business Guide</p>
+<p data-ps="زده کړه، هڅه وکړه او پرمختګ وکړه!" data-fa="بیاموز، تلاش کن و پیشرفت کن!" data-en="Learn, work and grow!">زده کړه، هڅه وکړه او پرمختګ وکړه!</p>
+</footer>
+
+<script>
+function setLang(lang){
+document.querySelectorAll('[data-'+lang+']').forEach(el=>{
+el.textContent=el.getAttribute('data-'+lang);
+});
+document.documentElement.lang=lang;
+document.documentElement.dir=lang==='en'?'ltr':'rtl';
+}
+</script>
+
 </body>
 </html>
